@@ -42,7 +42,7 @@ class Solver{
     private func calLocation(x: Int ,y: Int,num: Int)->[Int]{
         return [(x * 9 + y) * 9 + num,y + x * 9,81 * 1 + x * 9 + num,81 * 2 + y * 9 + num,81 * 3 + ((y / 3)  + (x / 3) * 3 ) * 9 + num,]
     }
-    private func initDL(){//////////////////////////////////////////////////////////////
+    private func initDL(){
         self.initColDict()
         for x in 0..<9{
             for y in 0..<9{
